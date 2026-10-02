@@ -3,99 +3,71 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Pr. Fouad Rabah — Physique & Chimie. Cours, ressources et préparation aux examens pour les élèves du collège.">
+<meta name="description" content="Pr. Fouad Rabah — Plateforme pédagogique de Physique & Chimie pour les élèves du collège.">
 <title>Pr. Fouad Rabah | Physique & Chimie</title>
 <style>
-:root{--bg:#07111f;--panel:#0d1b2e;--panel2:#10243b;--text:#f4f7fb;--muted:#a9b8c9;--gold:#e7c46a;--cyan:#55d8ff;--line:#20344d;--max:1180px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:radial-gradient(circle at 80% 0%,#12304d 0,#07111f 38%,#050b14 100%);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;line-height:1.6}
-a{color:inherit;text-decoration:none}.wrap{width:min(92%,var(--max));margin:auto}
-nav{position:sticky;top:0;z-index:20;background:rgba(5,11,20,.86);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.07)}
-.navin{height:72px;display:flex;align-items:center;justify-content:space-between}
-.brand{font-weight:800;letter-spacing:.3px}.brand small{display:block;color:var(--gold);font-size:11px;letter-spacing:2px}
-.links{display:flex;gap:22px;font-size:14px;color:var(--muted)}.links a:hover{color:var(--text)}
-.menu{display:none;background:none;border:1px solid var(--line);color:var(--text);border-radius:10px;padding:8px 10px}
-.hero{min-height:78vh;display:grid;place-items:center;position:relative;overflow:hidden}
-.hero:before{content:"";position:absolute;width:520px;height:520px;border:1px solid rgba(85,216,255,.12);border-radius:50%;right:-180px;top:40px;box-shadow:0 0 0 80px rgba(85,216,255,.025),0 0 0 160px rgba(85,216,255,.018)}
-.eyebrow{color:var(--cyan);font-size:13px;text-transform:uppercase;letter-spacing:3px;font-weight:700}
-.hero h1{font-size:clamp(42px,7vw,82px);line-height:1.02;margin:14px 0 18px;max-width:850px}
-.hero h1 span{color:var(--gold)}.hero p{max-width:690px;color:var(--muted);font-size:18px}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{padding:13px 19px;border-radius:12px;border:1px solid var(--line);font-weight:700}
-.primary{background:var(--gold);color:#10151b;border-color:var(--gold)}.secondary{background:rgba(255,255,255,.03)}
-section{padding:90px 0}.sectionhead{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:28px}
-.sectionhead h2{font-size:34px;margin:0}.sectionhead p{color:var(--muted);max-width:560px;margin:0}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{background:linear-gradient(145deg,rgba(16,36,59,.88),rgba(9,22,37,.88));border:1px solid var(--line);border-radius:20px;padding:26px;transition:.25s}
-.card:hover{transform:translateY(-4px);border-color:#36516d}.icon{font-size:30px}.card h3{margin:12px 0 7px}.card p{color:var(--muted);margin:0}
-.tag{display:inline-block;margin-top:18px;padding:6px 10px;border-radius:999px;background:rgba(85,216,255,.08);color:var(--cyan);font-size:12px}
-.about{display:grid;grid-template-columns:1.1fr .9fr;gap:25px;align-items:stretch}
-.quote{font-size:26px;line-height:1.35}.profile{background:linear-gradient(160deg,#102842,#091422);border:1px solid var(--line);border-radius:24px;padding:30px;display:flex;flex-direction:column;justify-content:center}
-.profile strong{font-size:25px}.profile span{color:var(--gold)}
-.cta{border:1px solid #304761;border-radius:25px;padding:42px;background:linear-gradient(120deg,rgba(231,196,106,.08),rgba(85,216,255,.06));display:flex;justify-content:space-between;gap:25px;align-items:center}
-.cta h2{margin:0 0 8px}.cta p{color:var(--muted);margin:0}
-footer{padding:35px 0;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
-.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.reveal{opacity:0;transform:translateY(18px);transition:.7s}.reveal.show{opacity:1;transform:none}
-@media(max-width:800px){
-.links{display:none;position:absolute;top:72px;left:0;right:0;background:#07111f;padding:18px 4%;flex-direction:column;border-bottom:1px solid var(--line)}
-.links.open{display:flex}.menu{display:block}.grid,.about{grid-template-columns:1fr}.hero{min-height:70vh}
-.sectionhead{display:block}.sectionhead p{margin-top:10px}.cta{display:block}.cta .btn{display:inline-block;margin-top:22px}
-}
+:root{--bg:#06101c;--bg2:#091827;--panel:#0d1d30;--panel2:#112842;--text:#f5f8fc;--muted:#a9bacd;--gold:#e8c96b;--cyan:#58dcff;--green:#57dfb0;--line:#213b56;--danger:#ff7d8d;--shadow:0 24px 70px rgba(0,0,0,.28);--max:1220px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0,#153c5d 0,#071320 35%,#040a12 100%);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}button,input,select{font:inherit}.wrap{width:min(92%,var(--max));margin:auto}
+nav{position:sticky;top:0;z-index:100;background:rgba(4,10,18,.78);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.07)}.navin{height:74px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-weight:900;letter-spacing:.2px}.brand small{display:block;color:var(--gold);font-size:10px;letter-spacing:2.5px}.links{display:flex;gap:20px;font-size:14px;color:var(--muted)}.links a:hover{color:var(--text)}.menu{display:none;background:none;border:1px solid var(--line);color:var(--text);border-radius:10px;padding:8px 10px}
+.hero{min-height:82vh;display:grid;align-items:center;position:relative;overflow:hidden}.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;pointer-events:none}.hero:before{width:620px;height:620px;right:-220px;top:-110px;border:1px solid rgba(88,220,255,.13);box-shadow:0 0 0 80px rgba(88,220,255,.025),0 0 0 160px rgba(88,220,255,.015)}.hero:after{width:280px;height:280px;left:-150px;bottom:-120px;background:rgba(232,201,107,.06);filter:blur(4px)}.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:50px;align-items:center;position:relative;z-index:1}.eyebrow{color:var(--cyan);font-size:12px;text-transform:uppercase;letter-spacing:3px;font-weight:800}.hero h1{font-size:clamp(45px,7vw,86px);line-height:.98;margin:15px 0 20px;max-width:850px}.hero h1 span{color:var(--gold)}.hero p{max-width:700px;color:var(--muted);font-size:18px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 19px;border-radius:13px;border:1px solid var(--line);font-weight:800;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-2px)}.primary{background:var(--gold);color:#111820;border-color:var(--gold)}.secondary{background:rgba(255,255,255,.035)}
+.hero-card{background:linear-gradient(150deg,rgba(18,48,76,.9),rgba(7,20,34,.9));border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:var(--shadow);position:relative}.orb{width:92px;height:92px;border-radius:50%;display:grid;place-items:center;font-size:42px;background:radial-gradient(circle,#1c5b7b,#0c2338);border:1px solid #315d7b;margin-bottom:20px}.hero-card h3{font-size:24px;margin:0 0 8px}.hero-card p{font-size:14px;margin:0 0 20px}.mini-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.stat{padding:13px;border-radius:14px;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.06);text-align:center}.stat strong{display:block;font-size:21px}.stat span{font-size:11px;color:var(--muted)}
+section{padding:88px 0}.sectionhead{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:30px}.sectionhead h2{font-size:36px;line-height:1.15;margin:4px 0 0}.sectionhead p{color:var(--muted);max-width:580px;margin:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:linear-gradient(145deg,rgba(17,40,66,.9),rgba(8,20,34,.9));border:1px solid var(--line);border-radius:21px;padding:24px;transition:.25s;box-shadow:0 12px 35px rgba(0,0,0,.12)}.card:hover{transform:translateY(-5px);border-color:#3a5b79}.icon{font-size:30px}.card h3{margin:12px 0 7px}.card p{color:var(--muted);margin:0}.tag{display:inline-block;margin-top:18px;padding:6px 10px;border-radius:999px;background:rgba(88,220,255,.08);color:var(--cyan);font-size:11px;font-weight:700}
+.levels{grid-template-columns:repeat(3,1fr)}.level{position:relative;overflow:hidden;min-height:205px}.level .num{font-size:56px;font-weight:900;color:rgba(232,201,107,.14);position:absolute;right:18px;top:0}.level h3{font-size:24px}.level a{margin-top:18px;display:inline-flex;color:var(--gold);font-weight:800}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}.search{flex:1;min-width:240px;padding:13px 15px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.035);color:var(--text);outline:none}.filter{padding:13px 15px;border:1px solid var(--line);border-radius:13px;background:#0c1b2d;color:var(--text)}.resource-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.resource{display:flex;flex-direction:column;min-height:245px}.resource-top{display:flex;justify-content:space-between;align-items:center}.type{font-size:11px;font-weight:900;letter-spacing:1px;padding:5px 9px;border-radius:999px}.pdf{background:rgba(255,125,141,.12);color:#ff9aaa}.video{background:rgba(88,220,255,.1);color:var(--cyan)}.exercise{background:rgba(87,223,176,.1);color:var(--green)}.resource-actions{margin-top:auto;display:flex;gap:8px}.small-btn{padding:9px 12px;border-radius:10px;border:1px solid var(--line);background:rgba(255,255,255,.03);font-size:12px;font-weight:800;cursor:pointer;color:var(--text)}
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:22px}.profile{background:linear-gradient(160deg,#102c48,#091524);border:1px solid var(--line);border-radius:25px;padding:30px;display:flex;flex-direction:column;justify-content:center}.profile strong{font-size:28px}.profile span{color:var(--gold)}.quote{font-size:26px;line-height:1.4}.muted{color:var(--muted)}
+.video-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.video-box{aspect-ratio:16/9;border-radius:20px;border:1px solid var(--line);background:linear-gradient(135deg,#0b253c,#07121f);display:grid;place-items:center;position:relative;overflow:hidden}.play{width:68px;height:68px;border-radius:50%;display:grid;place-items:center;background:var(--gold);color:#111820;font-size:25px;padding-left:4px;box-shadow:0 10px 30px rgba(232,201,107,.2)}.video-label{position:absolute;left:18px;bottom:15px;font-weight:800}.video-label small{display:block;color:var(--muted);font-weight:500}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.gallery-item{aspect-ratio:1;border-radius:18px;border:1px solid var(--line);background:linear-gradient(145deg,#12334d,#081522);display:flex;align-items:end;padding:15px;position:relative;overflow:hidden}.gallery-item:before{content:"⚛";position:absolute;font-size:100px;color:rgba(88,220,255,.08);right:8px;top:0}.gallery-item strong{position:relative;z-index:1}.cta{border:1px solid #304b67;border-radius:26px;padding:40px;background:linear-gradient(120deg,rgba(232,201,107,.08),rgba(88,220,255,.06));display:flex;justify-content:space-between;gap:25px;align-items:center}.cta h2{margin:0 0 8px}.cta p{color:var(--muted);margin:0}footer{padding:35px 0;border-top:1px solid var(--line);color:var(--muted);font-size:13px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.reveal{opacity:0;transform:translateY(18px);transition:.7s}.reveal.show{opacity:1;transform:none}.hidden{display:none!important}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.72);backdrop-filter:blur(8px);display:none;place-items:center;padding:20px;z-index:200}.modal.open{display:grid}.modal-box{width:min(760px,100%);max-height:85vh;overflow:auto;background:#0b1a2b;border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:var(--shadow)}.modal-head{display:flex;justify-content:space-between;gap:15px}.close{border:1px solid var(--line);background:transparent;color:var(--text);border-radius:10px;padding:7px 11px;cursor:pointer}.demo-doc{margin-top:20px;min-height:320px;border:1px dashed #42627e;border-radius:18px;display:grid;place-items:center;text-align:center;color:var(--muted);padding:25px}
+@media(max-width:900px){.hero-grid,.about{grid-template-columns:1fr}.grid,.resource-grid{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:repeat(2,1fr)}.video-grid{grid-template-columns:1fr}.links{display:none;position:absolute;top:74px;left:0;right:0;background:#07111f;padding:18px 4%;flex-direction:column;border-bottom:1px solid var(--line)}.links.open{display:flex}.menu{display:block}}
+@media(max-width:620px){.grid,.resource-grid,.levels{grid-template-columns:1fr}.hero{min-height:75vh}.sectionhead{display:block}.sectionhead p{margin-top:10px}.hero h1{font-size:46px}.cta{display:block}.cta .btn{margin-top:20px}.mini-stats{grid-template-columns:1fr 1fr 1fr}.gallery{grid-template-columns:1fr 1fr}}
 </style>
 </head>
 <body>
 <nav><div class="wrap navin">
 <a class="brand" href="#accueil">Pr. Fouad Rabah<small>PHYSIQUE • CHIMIE</small></a>
 <button class="menu" aria-label="Menu">☰</button>
-<div class="links"><a href="#accueil">Accueil</a><a href="#apropos">À propos</a><a href="#matieres">Matières</a><a href="#ressources">Ressources</a><a href="#contact">Contact</a></div>
+<div class="links"><a href="#accueil">Accueil</a><a href="#niveaux">Niveaux</a><a href="#cours">Cours</a><a href="#ressources">Ressources</a><a href="#videos">Vidéos</a><a href="#apropos">À propos</a><a href="#contact">Contact</a></div>
 </div></nav>
-
 <main>
-<section id="accueil" class="hero"><div class="wrap">
-<div class="eyebrow">Enseignant de Physique-Chimie</div>
-<h1>Apprendre. <span>Comprendre.</span> Réussir.</h1>
-<p>Un espace pédagogique dédié aux élèves du collège : cours, ressources, méthodes et préparation aux examens, dans un univers scientifique moderne.</p>
-<div class="actions"><a class="btn primary" href="#ressources">Découvrir les ressources</a><a class="btn secondary" href="#contact">Me contacter</a></div>
+<section id="accueil" class="hero"><div class="wrap hero-grid">
+<div><div class="eyebrow">Plateforme pédagogique • 2026 / 2027</div><h1>Apprendre. <span>Comprendre.</span><br>Réussir.</h1><p>Un espace numérique dédié à la Physique-Chimie au collège : cours structurés, fiches PDF, exercices, activités scientifiques et ressources pour réviser efficacement.</p><div class="actions"><a class="btn primary" href="#ressources">Explorer les ressources ↓</a><a class="btn secondary" href="#cours">Voir les cours</a></div></div>
+<div class="hero-card"><div class="orb">⚛️</div><h3>Bienvenue dans votre espace scientifique</h3><p>Retrouvez progressivement les contenus classés par niveau, chapitre et type de ressource.</p><div class="mini-stats"><div class="stat"><strong>1AC</strong><span>Niveau</span></div><div class="stat"><strong>2AC</strong><span>Niveau</span></div><div class="stat"><strong>3AC</strong><span>Niveau</span></div></div></div>
 </div></section>
 
-<section id="apropos"><div class="wrap about reveal">
-<div><div class="eyebrow">À propos</div><h2>La science devient plus simple quand on la comprend.</h2>
-<p class="quote">« Mon objectif est d'accompagner chaque élève pour transformer la curiosité en compréhension, puis la compréhension en réussite. »</p>
-<p style="color:var(--muted)">Cours structurés, explications visuelles et activités adaptées au niveau collège.</p></div>
-<div class="profile"><strong>Pr. Fouad Rabah</strong><span>Enseignant de Physique-Chimie</span>
-<p style="color:var(--muted)">ثانوية بوعادل الإعدادية<br>Lycée Bouadel Collégial</p></div>
-</div></section>
+<section id="niveaux"><div class="wrap"><div class="sectionhead reveal"><div><div class="eyebrow">Espace élèves</div><h2>Choisissez votre niveau</h2></div><p>Une organisation simple pour accéder rapidement aux cours, exercices et documents correspondant à votre niveau.</p></div>
+<div class="grid levels"><article class="card level reveal"><div class="num">01</div><div class="icon">🔬</div><h3>1ère année collège</h3><p>Découverte de la Physique-Chimie et acquisition des notions fondamentales.</p><a href="#cours" data-level="1AC">Voir les ressources →</a></article><article class="card level reveal"><div class="num">02</div><div class="icon">⚡</div><h3>2ème année collège</h3><p>Consolidation des concepts, lois physiques et transformations chimiques.</p><a href="#cours" data-level="2AC">Voir les ressources →</a></article><article class="card level reveal"><div class="num">03</div><div class="icon">🧪</div><h3>3ème année collège</h3><p>Approfondissement, résolution de problèmes et préparation aux examens.</p><a href="#cours" data-level="3AC">Voir les ressources →</a></article></div></div></section>
 
-<section id="matieres"><div class="wrap">
-<div class="sectionhead reveal"><div><div class="eyebrow">Programme</div><h2>Physique & Chimie</h2></div><p>Les notions essentielles présentées de façon claire, progressive et visuelle.</p></div>
-<div class="grid">
-<article class="card reveal"><div class="icon">⚛️</div><h3>Physique</h3><p>Mouvement, forces, équilibre, masse et poids, électricité, loi d'Ohm, puissance et énergie.</p><span class="tag">Comprendre les phénomènes</span></article>
-<article class="card reveal"><div class="icon">🧪</div><h3>Chimie</h3><p>Espèces chimiques, entités, atomes, ions, solutions et transformations chimiques.</p><span class="tag">Observer • Modéliser</span></article>
-<article class="card reveal"><div class="icon">🎯</div><h3>Préparation aux examens</h3><p>Méthodes de résolution, exercices progressifs, révisions et conseils pour mieux se préparer.</p><span class="tag">Objectif réussite</span></article>
+<section id="cours"><div class="wrap"><div class="sectionhead reveal"><div><div class="eyebrow">Programme</div><h2>Cours & chapitres</h2></div><p>Une base de démonstration prête à recevoir vos véritables fiches de cours et documents.</p></div>
+<div class="grid"><article class="card reveal"><div class="icon">⚛️</div><h3>Physique</h3><p>Mouvement, forces, équilibre, masse et poids, électricité, loi d'Ohm, puissance et énergie.</p><span class="tag">1AC • 2AC • 3AC</span></article><article class="card reveal"><div class="icon">🧪</div><h3>Chimie</h3><p>Espèces chimiques, entités, atomes, ions, solutions et transformations chimiques.</p><span class="tag">Cours structurés</span></article><article class="card reveal"><div class="icon">🎯</div><h3>Préparation aux examens</h3><p>Méthodes de résolution, exercices progressifs, révisions et conseils méthodologiques.</p><span class="tag">Objectif réussite</span></article></div></div></section>
+
+<section id="ressources"><div class="wrap"><div class="sectionhead reveal"><div><div class="eyebrow">Bibliothèque</div><h2>Ressources pédagogiques</h2></div><p>Recherchez et filtrez les contenus. Les liens de démonstration sont à remplacer par vos propres fichiers.</p></div>
+<div class="toolbar"><input id="search" class="search" type="search" placeholder="Rechercher un cours, exercice, chapitre…"><select id="filter" class="filter"><option value="all">Tous les types</option><option value="PDF">PDF</option><option value="Exercice">Exercices</option><option value="Cours">Cours</option></select></div>
+<div id="resourceGrid" class="resource-grid">
+<article class="card resource reveal" data-title="cours mouvement physique 1AC" data-type="Cours"><div class="resource-top"><span class="type video">COURS</span><span>1AC</span></div><h3>Mouvement et trajectoire</h3><p>Fiche de cours à remplacer par votre document PDF réel.</p><span class="tag">Physique</span><div class="resource-actions"><button class="small-btn preview" data-title="Mouvement et trajectoire">Aperçu</button><a class="small-btn" href="#" onclick="return false">PDF ↗</a></div></article>
+<article class="card resource reveal" data-title="fiche chimie atomes ions" data-type="PDF"><div class="resource-top"><span class="type pdf">PDF</span><span>2AC</span></div><h3>Atomes & ions</h3><p>Fiche synthèse avec définitions, modèles et points essentiels.</p><span class="tag">Chimie</span><div class="resource-actions"><button class="small-btn preview" data-title="Atomes & ions">Aperçu</button><a class="small-btn" href="#" onclick="return false">Télécharger</a></div></article>
+<article class="card resource reveal" data-title="exercices electricite loi ohm" data-type="Exercice"><div class="resource-top"><span class="type exercise">EXERCICE</span><span>3AC</span></div><h3>Électricité & loi d'Ohm</h3><p>Série d'exercices progressifs avec espace pour les réponses.</p><span class="tag">Entraînement</span><div class="resource-actions"><button class="small-btn preview" data-title="Électricité & loi d'Ohm">Aperçu</button><a class="small-btn" href="#" onclick="return false">PDF ↗</a></div></article>
+<article class="card resource reveal" data-title="revision masse poids" data-type="PDF"><div class="resource-top"><span class="type pdf">PDF</span><span>1AC</span></div><h3>Masse et poids</h3><p>Résumé visuel et exercices d'application.</p><span class="tag">Révision</span><div class="resource-actions"><button class="small-btn preview" data-title="Masse et poids">Aperçu</button><a class="small-btn" href="#" onclick="return false">Télécharger</a></div></article>
+<article class="card resource reveal" data-title="transformations chimiques exercices" data-type="Exercice"><div class="resource-top"><span class="type exercise">EXERCICE</span><span>2AC</span></div><h3>Transformations chimiques</h3><p>Activités et exercices pour identifier réactifs et produits.</p><span class="tag">Chimie</span><div class="resource-actions"><button class="small-btn preview" data-title="Transformations chimiques">Aperçu</button><a class="small-btn" href="#" onclick="return false">PDF ↗</a></div></article>
+<article class="card resource reveal" data-title="energie puissance cours" data-type="Cours"><div class="resource-top"><span class="type video">COURS</span><span>3AC</span></div><h3>Puissance & énergie</h3><p>Notions clés, relations et exemples guidés.</p><span class="tag">Physique</span><div class="resource-actions"><button class="small-btn preview" data-title="Puissance & énergie">Aperçu</button><a class="small-btn" href="#" onclick="return false">PDF ↗</a></div></article>
 </div></div></section>
 
-<section id="ressources"><div class="wrap">
-<div class="sectionhead reveal"><div><div class="eyebrow">Espace élèves</div><h2>Ressources pédagogiques</h2></div><p>Une bibliothèque qui pourra accueillir progressivement vos cours, fiches, exercices, vidéos et documents.</p></div>
-<div class="grid">
-<article class="card reveal"><div class="icon">📘</div><h3>Cours</h3><p>Fiches de cours et synthèses organisées par niveau et par chapitre.</p></article>
-<article class="card reveal"><div class="icon">📝</div><h3>Exercices</h3><p>Applications guidées, exercices d'entraînement et sujets de préparation.</p></article>
-<article class="card reveal"><div class="icon">🎬</div><h3>Vidéos</h3><p>Explications et contenus scientifiques pour réviser à son rythme.</p></article>
-</div></div></section>
+<section id="videos"><div class="wrap"><div class="sectionhead reveal"><div><div class="eyebrow">Médiathèque</div><h2>Vidéos & explications</h2></div><p>Remplacez les cartes ci-dessous par vos liens YouTube, Facebook ou vos vidéos pédagogiques.</p></div><div class="video-grid"><article class="card reveal"><div class="video-box"><div class="play">▶</div><div class="video-label">Comprendre la loi d'Ohm<small>Vidéo pédagogique • 3AC</small></div></div><h3>La loi d'Ohm en quelques minutes</h3><p>Emplacement prévu pour une vidéo réelle.</p></article><article class="card reveal"><div class="video-box"><div class="play">▶</div><div class="video-label">Les transformations chimiques<small>Vidéo pédagogique • 2AC</small></div></div><h3>Observer une transformation chimique</h3><p>Emplacement prévu pour une vidéo réelle.</p></article></div></div></section>
 
-<section id="contact"><div class="wrap"><div class="cta reveal">
-<div><div class="eyebrow">Restons connectés</div><h2>Retrouvez les contenus et actualités pédagogiques.</h2><p>Suivez les ressources et les publications de Pr. Fouad Rabah.</p></div>
-<a class="btn primary" href="https://www.facebook.com/profile.php?id=61594313339005" target="_blank" rel="noopener">Page Facebook ↗</a>
-</div></div></section>
+<section id="activites"><div class="wrap"><div class="sectionhead reveal"><div><div class="eyebrow">Laboratoire numérique</div><h2>Images & activités scientifiques</h2></div><p>Une galerie pour présenter expériences, schémas, fiches illustrées et productions des élèves.</p></div><div class="gallery"><div class="gallery-item reveal"><strong>Expériences</strong></div><div class="gallery-item reveal"><strong>Schémas scientifiques</strong></div><div class="gallery-item reveal"><strong>Travaux pratiques</strong></div><div class="gallery-item reveal"><strong>Fiches illustrées</strong></div></div></div></section>
+
+<section id="apropos"><div class="wrap about"><div class="reveal"><div class="eyebrow">À propos</div><h2>La science devient plus simple quand on la comprend.</h2><p class="quote">« Mon objectif est d'accompagner chaque élève pour transformer la curiosité en compréhension, puis la compréhension en réussite. »</p><p class="muted">Cours structurés, explications visuelles et activités adaptées au niveau collège.</p></div><div class="profile reveal"><strong>Pr. Fouad Rabah</strong><span>Enseignant de Physique-Chimie</span><p class="muted">ثانوية بوعادل الإعدادية<br>Lycée Bouadel Collégial<br><br>Académie régionale : Fès-Meknès<br>Direction provinciale : Taounate</p></div></div></section>
+
+<section id="contact"><div class="wrap"><div class="cta reveal"><div><div class="eyebrow">Restons connectés</div><h2>Retrouvez les contenus et actualités pédagogiques.</h2><p>Suivez les publications et les nouvelles ressources de Pr. Fouad Rabah.</p></div><a class="btn primary" href="https://www.facebook.com/profile.php?id=61594313339005" target="_blank" rel="noopener">Page Facebook ↗</a></div></div></section>
 </main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> Pr. Fouad Rabah — Physique & Chimie</span><span>ثانوية بوعادل الإعدادية • 2026 / 2027</span></div></footer>
 
-<footer><div class="wrap foot"><span>© <span id="year"></span> Pr. Fouad Rabah — Physique & Chimie</span><span>ثانوية بوعادل الإعدادية</span></div></footer>
-
+<div id="modal" class="modal" role="dialog" aria-modal="true"><div class="modal-box"><div class="modal-head"><div><div class="eyebrow">Aperçu de la ressource</div><h2 id="modalTitle">Ressource</h2></div><button class="close" id="closeModal">✕</button></div><div class="demo-doc"><div><div style="font-size:46px">📄</div><h3>Emplacement du document</h3><p>Cette zone est prête à accueillir l'aperçu de votre PDF ou votre fiche. Remplacez le lien de démonstration dans le code par le chemin réel du fichier.</p></div></div></div></div>
 <script>
-const menu=document.querySelector('.menu'),links=document.querySelector('.links');
-menu.addEventListener('click',()=>links.classList.toggle('open'));
-document.querySelectorAll('.links a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+const menu=document.querySelector('.menu'),links=document.querySelector('.links');menu.addEventListener('click',()=>links.classList.toggle('open'));document.querySelectorAll('.links a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
 document.getElementById('year').textContent=new Date().getFullYear();
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
-document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.08});document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
+const search=document.getElementById('search'),filter=document.getElementById('filter'),cards=[...document.querySelectorAll('.resource')];function apply(){const q=search.value.toLowerCase().trim(),t=filter.value;cards.forEach(c=>{const okq=c.dataset.title.includes(q),okt=t==='all'||c.dataset.type===t;c.classList.toggle('hidden',!(okq&&okt))})}search.addEventListener('input',apply);filter.addEventListener('change',apply);
+const modal=document.getElementById('modal'),modalTitle=document.getElementById('modalTitle');document.querySelectorAll('.preview').forEach(b=>b.addEventListener('click',()=>{modalTitle.textContent=b.dataset.title;modal.classList.add('open')}));document.getElementById('closeModal').addEventListener('click',()=>modal.classList.remove('open'));modal.addEventListener('click',e=>{if(e.target===modal)modal.classList.remove('open')});document.addEventListener('keydown',e=>{if(e.key==='Escape')modal.classList.remove('open')});
 </script>
-</body>
-</html>
+</body></html>
